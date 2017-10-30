@@ -13,6 +13,8 @@
 		4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8888601FA66B910079CFFC /* Circa.xcdatamodeld */; };
 		4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888631FA66B910079CFFC /* Assets.xcassets */; };
 		4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */; };
+		4C88886F1FA67BDA0079CFFC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88886E1FA67BDA0079CFFC /* PostViewController.swift */; };
+		9B5B0EF02DDFCD39387444D3 /* Pods_Circa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		4C8888631FA66B910079CFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8888661FA66B910079CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8888681FA66B910079CFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C88886E1FA67BDA0079CFFC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		86E0780398A7050174FD1800 /* Pods-Circa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Circa/Pods-Circa.debug.xcconfig"; sourceTree = "<group>"; };
+		8C85791363EF915BBAF53587 /* Pods-Circa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Circa/Pods-Circa.release.xcconfig"; sourceTree = "<group>"; };
+		AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Circa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5B0EF02DDFCD39387444D3 /* Pods_Circa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBFCEB1392ED90C4B72D73C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E0780398A7050174FD1800 /* Pods-Circa.debug.xcconfig */,
+				8C85791363EF915BBAF53587 /* Pods-Circa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C88884D1FA66B910079CFFC = {
 			isa = PBXGroup;
 			children = (
 				4C8888581FA66B910079CFFC /* Circa */,
 				4C8888571FA66B910079CFFC /* Products */,
+				0EBFCEB1392ED90C4B72D73C /* Pods */,
+				7F60B8826194BBBB06253924 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				4C8888591FA66B910079CFFC /* AppDelegate.swift */,
 				4C88885B1FA66B910079CFFC /* ViewController.swift */,
 				4C88885D1FA66B910079CFFC /* Main.storyboard */,
+				4C88886E1FA67BDA0079CFFC /* PostViewController.swift */,
 				4C8888631FA66B910079CFFC /* Assets.xcassets */,
 				4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */,
 				4C8888681FA66B910079CFFC /* Info.plist */,
 				4C8888601FA66B910079CFFC /* Circa.xcdatamodeld */,
 			);
 			path = Circa;
+			sourceTree = "<group>";
+		};
+		7F60B8826194BBBB06253924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C88886B1FA66B910079CFFC /* Build configuration list for PBXNativeTarget "Circa" */;
 			buildPhases = (
+				5B1742881BB50B3AA12F3BBB /* [CP] Check Pods Manifest.lock */,
 				4C8888521FA66B910079CFFC /* Sources */,
 				4C8888531FA66B910079CFFC /* Frameworks */,
 				4C8888541FA66B910079CFFC /* Resources */,
+				90B01B30EA908E627D67BD0D /* [CP] Embed Pods Frameworks */,
+				376CB39A0FFF15EF80C93CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,11 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		376CB39A0FFF15EF80C93CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Circa/Pods-Circa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1742881BB50B3AA12F3BBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90B01B30EA908E627D67BD0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Circa/Pods-Circa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C8888521FA66B910079CFFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C88886F1FA67BDA0079CFFC /* PostViewController.swift in Sources */,
 				4C88885C1FA66B910079CFFC /* ViewController.swift in Sources */,
 				4C88885A1FA66B910079CFFC /* AppDelegate.swift in Sources */,
 				4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */,
@@ -264,6 +343,7 @@
 		};
 		4C88886C1FA66B910079CFFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E0780398A7050174FD1800 /* Pods-Circa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Circa/Info.plist;
@@ -276,6 +356,7 @@
 		};
 		4C88886D1FA66B910079CFFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C85791363EF915BBAF53587 /* Pods-Circa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Circa/Info.plist;
