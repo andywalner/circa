@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C02E3FF1FA6D061004686EA /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C02E3FE1FA6D061004686EA /* Feed.storyboard */; };
+		4C02E4031FA6D1BC004686EA /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C02E4021FA6D1BC004686EA /* FeedCell.xib */; };
 		4C88885A1FA66B910079CFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8888591FA66B910079CFFC /* AppDelegate.swift */; };
-		4C88885C1FA66B910079CFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88885B1FA66B910079CFFC /* ViewController.swift */; };
-		4C88885F1FA66B910079CFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C88885D1FA66B910079CFFC /* Main.storyboard */; };
+		4C88885F1FA66B910079CFFC /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C88885D1FA66B910079CFFC /* Post.storyboard */; };
 		4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8888601FA66B910079CFFC /* Circa.xcdatamodeld */; };
 		4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888631FA66B910079CFFC /* Assets.xcassets */; };
 		4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */; };
@@ -18,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C02E3FE1FA6D061004686EA /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		4C02E4021FA6D1BC004686EA /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		4C8888561FA66B910079CFFC /* Circa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8888591FA66B910079CFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C88885B1FA66B910079CFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C88885E1FA66B910079CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C88885E1FA66B910079CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Post.storyboard; sourceTree = "<group>"; };
 		4C8888611FA66B910079CFFC /* Circa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Circa.xcdatamodel; sourceTree = "<group>"; };
 		4C8888631FA66B910079CFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8888661FA66B910079CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4C02E4001FA6D0E2004686EA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C88885D1FA66B910079CFFC /* Post.storyboard */,
+				4C02E3FE1FA6D061004686EA /* Feed.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		4C02E4011FA6D0EB004686EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C88886E1FA67BDA0079CFFC /* PostViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C02E4041FA6D1C9004686EA /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				4C02E4021FA6D1BC004686EA /* FeedCell.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
 		4C88884D1FA66B910079CFFC = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				4C8888591FA66B910079CFFC /* AppDelegate.swift */,
-				4C88885B1FA66B910079CFFC /* ViewController.swift */,
-				4C88885D1FA66B910079CFFC /* Main.storyboard */,
-				4C88886E1FA67BDA0079CFFC /* PostViewController.swift */,
+				4C02E4041FA6D1C9004686EA /* Nibs */,
+				4C02E4001FA6D0E2004686EA /* Storyboards */,
+				4C02E4011FA6D0EB004686EA /* ViewControllers */,
 				4C8888631FA66B910079CFFC /* Assets.xcassets */,
 				4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */,
 				4C8888681FA66B910079CFFC /* Info.plist */,
@@ -158,7 +185,9 @@
 			files = (
 				4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */,
 				4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */,
-				4C88885F1FA66B910079CFFC /* Main.storyboard in Resources */,
+				4C02E3FF1FA6D061004686EA /* Feed.storyboard in Resources */,
+				4C88885F1FA66B910079CFFC /* Post.storyboard in Resources */,
+				4C02E4031FA6D1BC004686EA /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C88886F1FA67BDA0079CFFC /* PostViewController.swift in Sources */,
-				4C88885C1FA66B910079CFFC /* ViewController.swift in Sources */,
 				4C88885A1FA66B910079CFFC /* AppDelegate.swift in Sources */,
 				4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */,
 			);
@@ -227,12 +255,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C88885D1FA66B910079CFFC /* Main.storyboard */ = {
+		4C88885D1FA66B910079CFFC /* Post.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4C88885E1FA66B910079CFFC /* Base */,
 			);
-			name = Main.storyboard;
+			name = Post.storyboard;
 			sourceTree = "<group>";
 		};
 		4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */ = {
@@ -386,6 +414,7 @@
 				4C88886D1FA66B910079CFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
