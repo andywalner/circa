@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35488FE27D7407A365A36ADD /* Pods_Circa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E67237346772E6382CF4646 /* Pods_Circa.framework */; };
 		4C02E3FF1FA6D061004686EA /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C02E3FE1FA6D061004686EA /* Feed.storyboard */; };
 		4C02E4031FA6D1BC004686EA /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C02E4021FA6D1BC004686EA /* FeedCell.xib */; };
 		4C88885A1FA66B910079CFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8888591FA66B910079CFFC /* AppDelegate.swift */; };
@@ -15,7 +16,12 @@
 		4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888631FA66B910079CFFC /* Assets.xcassets */; };
 		4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */; };
 		4C88886F1FA67BDA0079CFFC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88886E1FA67BDA0079CFFC /* PostViewController.swift */; };
-		9B5B0EF02DDFCD39387444D3 /* Pods_Circa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */; };
+		A675C4DD1FA7AF37008941C9 /* ChatView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A675C4DC1FA7AF37008941C9 /* ChatView.storyboard */; };
+		A675C4DF1FA7AF7A008941C9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4DE1FA7AF7A008941C9 /* ChatViewController.swift */; };
+		A675C4E11FA7B075008941C9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E01FA7B075008941C9 /* Login.storyboard */; };
+		A675C4E31FA7B089008941C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4E21FA7B089008941C9 /* LoginViewController.swift */; };
+		A675C4E51FA7B6AB008941C9 /* CircaPhotos in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E41FA7B6AB008941C9 /* CircaPhotos */; };
+		A675C4E91FA7F454008941C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +35,15 @@
 		4C8888661FA66B910079CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8888681FA66B910079CFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C88886E1FA67BDA0079CFFC /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		6E67237346772E6382CF4646 /* Pods_Circa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Circa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E0780398A7050174FD1800 /* Pods-Circa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Circa/Pods-Circa.debug.xcconfig"; sourceTree = "<group>"; };
 		8C85791363EF915BBAF53587 /* Pods-Circa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Circa/Pods-Circa.release.xcconfig"; sourceTree = "<group>"; };
-		AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Circa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A675C4DC1FA7AF37008941C9 /* ChatView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatView.storyboard; sourceTree = "<group>"; };
+		A675C4DE1FA7AF7A008941C9 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A675C4E01FA7B075008941C9 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A675C4E21FA7B089008941C9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A675C4E41FA7B6AB008941C9 /* CircaPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CircaPhotos; path = ../../../../Desktop/CircaPhotos; sourceTree = "<group>"; };
+		A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B5B0EF02DDFCD39387444D3 /* Pods_Circa.framework in Frameworks */,
+				35488FE27D7407A365A36ADD /* Pods_Circa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				4C88885D1FA66B910079CFFC /* Post.storyboard */,
+				A675C4E01FA7B075008941C9 /* Login.storyboard */,
 				4C02E3FE1FA6D061004686EA /* Feed.storyboard */,
+				A675C4DC1FA7AF37008941C9 /* ChatView.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -68,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				4C88886E1FA67BDA0079CFFC /* PostViewController.swift */,
+				A675C4E21FA7B089008941C9 /* LoginViewController.swift */,
+				A675C4DE1FA7AF7A008941C9 /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -101,6 +117,7 @@
 		4C8888581FA66B910079CFFC /* Circa */ = {
 			isa = PBXGroup;
 			children = (
+				A675C4E41FA7B6AB008941C9 /* CircaPhotos */,
 				4C8888591FA66B910079CFFC /* AppDelegate.swift */,
 				4C02E4041FA6D1C9004686EA /* Nibs */,
 				4C02E4001FA6D0E2004686EA /* Storyboards */,
@@ -108,6 +125,7 @@
 				4C8888631FA66B910079CFFC /* Assets.xcassets */,
 				4C8888651FA66B910079CFFC /* LaunchScreen.storyboard */,
 				4C8888681FA66B910079CFFC /* Info.plist */,
+				A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */,
 				4C8888601FA66B910079CFFC /* Circa.xcdatamodeld */,
 			);
 			path = Circa;
@@ -116,7 +134,7 @@
 		7F60B8826194BBBB06253924 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF10D4AA2BF07A641113C83A /* Pods_Circa.framework */,
+				6E67237346772E6382CF4646 /* Pods_Circa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,7 +203,11 @@
 			files = (
 				4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */,
 				4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */,
+				A675C4E91FA7F454008941C9 /* GoogleService-Info.plist in Resources */,
+				A675C4E51FA7B6AB008941C9 /* CircaPhotos in Resources */,
+				A675C4E11FA7B075008941C9 /* Login.storyboard in Resources */,
 				4C02E3FF1FA6D061004686EA /* Feed.storyboard in Resources */,
+				A675C4DD1FA7AF37008941C9 /* ChatView.storyboard in Resources */,
 				4C88885F1FA66B910079CFFC /* Post.storyboard in Resources */,
 				4C02E4031FA6D1BC004686EA /* FeedCell.xib in Resources */,
 			);
@@ -215,13 +237,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Circa-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90B01B30EA908E627D67BD0D /* [CP] Embed Pods Frameworks */ = {
@@ -230,9 +255,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Circa/Pods-Circa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,6 +280,8 @@
 			files = (
 				4C88886F1FA67BDA0079CFFC /* PostViewController.swift in Sources */,
 				4C88885A1FA66B910079CFFC /* AppDelegate.swift in Sources */,
+				A675C4DF1FA7AF7A008941C9 /* ChatViewController.swift in Sources */,
+				A675C4E31FA7B089008941C9 /* LoginViewController.swift in Sources */,
 				4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

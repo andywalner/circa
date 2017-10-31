@@ -21,7 +21,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         // profileImage attributes
-        profileImage.image = Toucan(image: #imageLiteral(resourceName: "fatJoe")).maskWithEllipse().image
+        profileImage.image = Toucan(image: #imageLiteral(resourceName: "fatJoe.png")).maskWithEllipse().image
         
         // nameLabel attributes
         nameLabel.numberOfLines = 1

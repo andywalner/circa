@@ -7,6 +7,6 @@ target 'Circa' do
 
   # Pods for Circa
   pod 'Toucan', '~> 0.6'
-
+  pod 'Firebase'
 
 end

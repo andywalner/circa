@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="L2y-Lu-w2W">
+            <objects>
+                <viewController id="I1k-OO-ax0" customClass="ChatViewController" customModule="Circa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JvD-jN-4uL"/>
+                        <viewControllerLayoutGuide type="bottom" id="D94-mQ-qWV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DAS-Sl-c1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ik1-6l-tRr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FP8-2O-gHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2722" y="485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ho-fb-eoU">
+            <objects>
+                <navigationController storyboardIdentifier="ChatVC" automaticallyAdjustsScrollViewInsets="NO" id="NAy-aM-fve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o2e-GO-K1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I1k-OO-ax0" kind="relationship" relationship="rootViewController" id="WTM-qF-ndz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqp-Hy-FII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3586.4000000000001" y="485.30734632683664"/>
+        </scene>
+    </scenes>
+</document>
