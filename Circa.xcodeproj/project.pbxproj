@@ -22,6 +22,7 @@
 		A675C4E31FA7B089008941C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4E21FA7B089008941C9 /* LoginViewController.swift */; };
 		A675C4E51FA7B6AB008941C9 /* CircaPhotos in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E41FA7B6AB008941C9 /* CircaPhotos */; };
 		A675C4E91FA7F454008941C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */; };
+		A675C4EB1FA80B78008941C9 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4EA1FA80B78008941C9 /* LoginHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A675C4E21FA7B089008941C9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A675C4E41FA7B6AB008941C9 /* CircaPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CircaPhotos; path = ../../../../Desktop/CircaPhotos; sourceTree = "<group>"; };
 		A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A675C4EA1FA80B78008941C9 /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginHelper.swift; path = ../LoginHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				A675C4E41FA7B6AB008941C9 /* CircaPhotos */,
 				4C8888591FA66B910079CFFC /* AppDelegate.swift */,
+				A675C4EA1FA80B78008941C9 /* LoginHelper.swift */,
 				4C02E4041FA6D1C9004686EA /* Nibs */,
 				4C02E4001FA6D0E2004686EA /* Storyboards */,
 				4C02E4011FA6D0EB004686EA /* ViewControllers */,
@@ -222,9 +225,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Circa/Pods-Circa-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -256,12 +262,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Circa/Pods-Circa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -283,6 +293,7 @@
 				A675C4DF1FA7AF7A008941C9 /* ChatViewController.swift in Sources */,
 				A675C4E31FA7B089008941C9 /* LoginViewController.swift in Sources */,
 				4C8888621FA66B910079CFFC /* Circa.xcdatamodeld in Sources */,
+				A675C4EB1FA80B78008941C9 /* LoginHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
