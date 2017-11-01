@@ -11,4 +11,5 @@ target 'Circa' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'JSQMessagesViewController'
+  pod 'Firebase/Database'
 end
