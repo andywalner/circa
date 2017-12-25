@@ -1,4 +1,4 @@
-//
+// Lecture 17
 //  ChatViewController.swift
 //  Circa
 //
@@ -14,24 +14,59 @@ import FirebaseDatabase
 
 class ChatViewController: JSQMessagesViewController {
     var messages = [JSQMessage]()
+    
+    var messageRef = Database.database().reference().child("messages")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.senderId = "1"
         self.senderDisplayName = "Ethan"
         
-        let rootRef = Database.database().reference()
-        let messageRef = rootRef.child("Messages")
+        observeMessages()
         
-        messageRef.observe(DataEventType.value) { (snapshot: DataSnapshot) in
-            print(snapshot)
+        
+        
+// The code below is not good because it makes the snapshot pull everything and not just the new things
+//        messageRef.observe(DataEventType.value) { (snapshot: DataSnapshot) in
+//            print(snapshot)
             
-            if let dict = snapshot.value as? NSDictionary {
-                print(dict)
-            }
-        }
+//            if let dict = snapshot.value as? NSDictionary {
+//                print(dict)
+//            }
+//        }
+        
+//        messageRef.observe(DataEventType.childAdded) { (snapshot: DataSnapshot) in
+//            print(snapshot)
+//            
+//                if let dict = snapshot.value as? String {
+//                    print(dict)
+//                }
+//            }
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    func observeMessages() {
+        messageRef.observe(.childAdded, with: { snapshot in
+            print(snapshot.value!)
+            var text = ""
+            var senderName = ""
+            var senderId = ""
+            var MediaType = ""
+            if let dict = snapshot.value as? [String: AnyObject] {
+                MediaType = dict["MediaType"] as! String
+                senderId = dict["senderId"] as! String
+                senderName = dict["senderName"] as! String
+                text = dict["text"] as! String
+                
+            }
+            self.messages.append(JSQMessage(senderId: senderId, displayName: senderName, text: text))
+            self.collectionView.reloadData()
+            
+        })
     }
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
@@ -41,9 +76,14 @@ class ChatViewController: JSQMessagesViewController {
         print(senderId)
         print(senderDisplayName)
         
-        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
-        collectionView.reloadData()
+//        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
+//        collectionView.reloadData()
+        
+        let newMessage = messageRef.childByAutoId()
+        let messageData = ["text": text, "senderId": senderId, "senderName": senderDisplayName, "MediaType": "TEXT"]
+        newMessage.setValue(messageData)
     }
+    
         
     
     
@@ -133,7 +173,7 @@ class ChatViewController: JSQMessagesViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    */  
 
 }
 

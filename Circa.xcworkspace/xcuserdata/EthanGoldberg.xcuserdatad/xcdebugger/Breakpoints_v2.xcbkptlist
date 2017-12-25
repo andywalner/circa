@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Circa/ChatViewController.swift"
-            timestampString = "531261295.116344"
+            timestampString = "535928112.050147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "didPressAccessoryButton(_:)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "observeMessages()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
