@@ -20,9 +20,9 @@
 		A675C4DF1FA7AF7A008941C9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4DE1FA7AF7A008941C9 /* ChatViewController.swift */; };
 		A675C4E11FA7B075008941C9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E01FA7B075008941C9 /* Login.storyboard */; };
 		A675C4E31FA7B089008941C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4E21FA7B089008941C9 /* LoginViewController.swift */; };
-		A675C4E51FA7B6AB008941C9 /* CircaPhotos in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E41FA7B6AB008941C9 /* CircaPhotos */; };
 		A675C4E91FA7F454008941C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */; };
 		A675C4EB1FA80B78008941C9 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675C4EA1FA80B78008941C9 /* LoginHelper.swift */; };
+		A6DE8CB61FF1AA26000D15BD /* fatJoe.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DE8CB51FF1AA26000D15BD /* fatJoe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,9 @@
 		A675C4DE1FA7AF7A008941C9 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A675C4E01FA7B075008941C9 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A675C4E21FA7B089008941C9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A675C4E41FA7B6AB008941C9 /* CircaPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CircaPhotos; path = ../../../../Desktop/CircaPhotos; sourceTree = "<group>"; };
 		A675C4E81FA7F454008941C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A675C4EA1FA80B78008941C9 /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginHelper.swift; path = ../LoginHelper.swift; sourceTree = "<group>"; };
+		A6DE8CB51FF1AA26000D15BD /* fatJoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fatJoe.png; path = ../../../../../Desktop/CircaPhotos/fatJoe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		4C8888581FA66B910079CFFC /* Circa */ = {
 			isa = PBXGroup;
 			children = (
-				A675C4E41FA7B6AB008941C9 /* CircaPhotos */,
+				A6DE8CB41FF1AA13000D15BD /* CircaPhotos */,
 				4C8888591FA66B910079CFFC /* AppDelegate.swift */,
 				A675C4EA1FA80B78008941C9 /* LoginHelper.swift */,
 				4C02E4041FA6D1C9004686EA /* Nibs */,
@@ -140,6 +140,14 @@
 				6E67237346772E6382CF4646 /* Pods_Circa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6DE8CB41FF1AA13000D15BD /* CircaPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				A6DE8CB51FF1AA26000D15BD /* fatJoe.png */,
+			);
+			path = CircaPhotos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +214,8 @@
 			files = (
 				4C8888671FA66B910079CFFC /* LaunchScreen.storyboard in Resources */,
 				4C8888641FA66B910079CFFC /* Assets.xcassets in Resources */,
+				A6DE8CB61FF1AA26000D15BD /* fatJoe.png in Resources */,
 				A675C4E91FA7F454008941C9 /* GoogleService-Info.plist in Resources */,
-				A675C4E51FA7B6AB008941C9 /* CircaPhotos in Resources */,
 				A675C4E11FA7B075008941C9 /* Login.storyboard in Resources */,
 				4C02E3FF1FA6D061004686EA /* Feed.storyboard in Resources */,
 				A675C4DD1FA7AF37008941C9 /* ChatView.storyboard in Resources */,
