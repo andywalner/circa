@@ -30,6 +30,12 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         GIDSignIn.sharedInstance().signIn()
     }
     
+    @IBAction func facebookLoginTapped(_ sender: Any) {
+        print("fbbbbbbb")
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,7 +50,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         // Do any additional setup after loading the view.
         
     }
-
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         if error != nil {

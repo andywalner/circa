@@ -48,6 +48,24 @@ class Helper {
         }
     }
     
+    func LoginWithFacebook(authentication: GIDAuthentication) {
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+                
+            } else {
+                print(user?.email)
+                print(user?.displayName)
+                
+                self.switchToNavigationViewController()
+            }
+            
+        }
+    }
+    
     private func switchToNavigationViewController() {
     
     //switch view by setting nav controller as root view controller
